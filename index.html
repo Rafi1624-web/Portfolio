@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Frontend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Rafi<span>.</span></a>
+
+    <div class="nav-capsule" id="navCapsule">
+      <a href="#home" class="active" data-section="home">Home</a>
+      <a href="#about" data-section="about">About</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#education" data-section="education">Education</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="active" data-mob="home">Home</a>
+    <a href="#about" data-mob="about">About</a>
+    <a href="#projects" data-mob="projects">Projects</a>
+    <a href="#skills" data-mob="skills">Skills</a>
+    <a href="#experience" data-mob="experience">Experience</a>
+    <a href="#education" data-mob="education">Education</a>
+  </div>
+
+
+  <!-- ═══ HOME ════════════════════════════════════════════ -->
+  <section id="home">
+    <canvas id="home-canvas"></canvas>
+
+    <div class="home-content">
+      <p class="home-eyebrow">Available for opportunities</p>
+      <p class="home-looking">Looking for a</p>
+      <h1 class="home-title">
+        <span class="gradient-text">Frontend<br>Developer</span>
+      </h1>
+      <p class="home-sub">
+        Crafting elegant, performant digital experiences with attention to every pixel and interaction.
+      </p>
+      <div class="home-cta">
+        <a href="Md_Rafiul_Islam_Sheikh_CV.pdf" download class="btn-primary">Download CV</a>
+        <a href="https://www.linkedin.com/in/md-rafi-sheikh16" class="btn-outline">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══ ABOUT ════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label fade-up">01 — About</p>
+      <h2 class="section-title fade-up">A little about<br><em>myself</em></h2>
+
+      <div class="about-grid">
+        <div class="about-image-wrap fade-up">
+          <div class="about-image-placeholder"><img src="profile.jpg" alt="Rafi" class="about-img"></div>
+          <div class="about-badge">
+            <strong>3+</strong>
+            Months of<br>Experience
+          </div>
+        </div>
+
+        <div class="about-text fade-up">
+          <div class="details">
+            <div class="row">
+              <span class="key">NAME</span>
+              <span class="value">Md Rafiul Islam Sheikh</span>
+            </div>
+
+            <div class="row">
+              <span class="key">LOCATION</span>
+              <span class="value">Bangladesh</span>
+            </div>
+
+            <div class="row">
+              <span class="key">ROLE</span>
+              <span class="value">Frontend Developer</span>
+            </div>
+
+            <div class="row">
+              <span class="key">AVAILABILITY</span>
+              <span class="value available">Open to Work ✓</span>
+            </div>
+
+            <div class="row">
+              <span class="key">FOCUS</span>
+              <span class="value">React · Next.js · GSAP</span>
+            </div>
+
+            <div class="row">
+              <span class="key">LANGUAGE</span>
+              <span class="value">Bengali · English</span>
+            </div>
+
+            <div class="row">
+              <span class="key">DEGREE</span>
+              <span class="value">B.Sc. CSE (ongoing)</span>
+            </div>
+          </div>
+          <p>
+            Hi, I'm a passionate frontend developer who transforms design ideas into smooth, accessible, and visually
+            compelling web experiences. I have a deep love for clean code and thoughtful UI design.
+          </p>
+          <p>
+            I specialize in building modern interfaces using React, Next.js, and cutting-edge CSS techniques. I believe
+            that great products live at the intersection of beautiful design and robust engineering.
+          </p>
+          <p>
+            When I'm not coding, I explore design systems, typography, and interaction design. I'm always looking for
+            ways to push the craft forward.
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ PROJECTS ═════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="section-inner">
+      <p class="section-label fade-up">02 — Projects</p>
+      <h2 class="section-title fade-up">Selected<br><em>work</em></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-thumb thumb-1">
+            <div class="project-thumb-inner"><span class="thumb-icon">◈</span></div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">Web App · React</p>
+            <h3 class="project-name">Coming Soon</h3>
+            <p class="project-desc">A full-featured online store with cart management, payment integration, and a clean
+              product browsing experience.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb thumb-2">
+            <div class="project-thumb-inner"><span class="thumb-icon">◉</span></div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">Dashboard · Next.js</p>
+            <h3 class="project-name">Coming Soon</h3>
+            <p class="project-desc">Real-time data visualization dashboard with interactive charts, filters, and export
+              functionality.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb thumb-3">
+            <div class="project-thumb-inner"><span class="thumb-icon">◎</span></div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">Portfolio · HTML/CSS/JS</p>
+            <h3 class="project-name">Coming Soon</h3>
+            <p class="project-desc">A scroll-driven animated portfolio site for a design studio featuring smooth
+              transitions and bold typography.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb thumb-4">
+            <div class="project-thumb-inner"><span class="thumb-icon">◇</span></div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">SaaS · React · Node</p>
+            <h3 class="project-name">Coming Soon</h3>
+            <p class="project-desc">Collaborative project management tool with drag-and-drop boards, real-time updates,
+              and team collaboration.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up">
+          <div class="project-thumb thumb-5">
+            <div class="project-thumb-inner"><span class="thumb-icon">○</span></div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">Landing Page · GSAP</p>
+            <h3 class="project-name">Coming Soon</h3>
+            <p class="project-desc">High-converting landing page with GSAP-powered scroll animations, video background,
+              and lead capture form.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Live Demo →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ SKILLS ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="section-inner">
+      <p class="section-label fade-up">03 — Skills</p>
+      <h2 class="section-title fade-up">What I<br><em>work with</em></h2>
+
+      <div class="skills-layout">
+
+        <div>
+          <div class="skill-category fade-up">
+            <p class="skill-category-title">Frontend</p>
+            <div class="skill-item">
+              <span class="skill-name">React / Next.js</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:92%"></div>
+              </div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:96%"></div>
+              </div>
+              <span class="skill-pct">96%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript / TypeScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:88%"></div>
+              </div>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">GSAP / Framer Motion</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:78%"></div>
+              </div>
+              <span class="skill-pct">78%</span>
+            </div>
+          </div>
+
+          <div class="skill-category fade-up">
+            <p class="skill-category-title">Backend & Tools</p>
+            <div class="skill-item">
+              <span class="skill-name">Node.js / Express</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:52%"></div>
+              </div>
+              <span class="skill-pct">52%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Firebase</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:70%"></div>
+              </div>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width:90%"></div>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="skill-category fade-up">
+          <p class="skill-category-title">Technologies</p>
+          <div class="tools-wrap">
+            <span class="tool-chip">React</span>
+            <span class="tool-chip">Next.js</span>
+            <span class="tool-chip">TypeScript</span>
+            <span class="tool-chip">Tailwind</span>
+            <span class="tool-chip">GSAP</span>
+            <span class="tool-chip">Framer Motion</span>
+            <span class="tool-chip">Node.js</span>
+            <span class="tool-chip">MongoDB</span>
+            <span class="tool-chip">Firebase</span>
+            <span class="tool-chip">Figma</span>
+            <span class="tool-chip">Vite</span>
+            <span class="tool-chip">Vercel</span>
+            <span class="tool-chip">Wordpress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ EXPERIENCE ════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="section-inner">
+      <p class="section-label fade-up">04 — Experience</p>
+      <h2 class="section-title fade-up">Where I've<br><em>worked</em></h2>
+
+      <div class="timeline fade-up">
+        <div class="timeline-item">
+          <p class="timeline-date">2026 · PRESENT</p>
+          <h3 class="timeline-role">Seeking Opportunities</h3>
+          <p class="timeline-company">student</p>
+          <p class="timeline-desc">Actively looking for a full-time or part-time frontend developer role where I can
+            contribute to real-world products, grow my skills, and collaborate with a talented team. Open to remote,
+            hybrid, or on-site positions in Bangladesh.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">React</span>
+            <span class="timeline-tag">Next.js</span>
+            <span class="timeline-tag">GSAP</span>
+            <span class="timeline-tag">Wordpress</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">2025 · 3 MONTHS</p>
+          <h3 class="timeline-role">Frontend Developer Intern</h3>
+          <p class="timeline-company">Endeavours LTD · Internship</p>
+          <p class="timeline-desc">Developed and maintained responsive web interfaces using React.js and Tailwind CSS.
+            Collaborated closely with the design and backend teams to translate UI mockups into clean, functional code.
+            Implemented GSAP-driven animations to enhance the user experience, participated in code reviews, and
+            followed agile workflows throughout the internship period.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">React</span>
+            <span class="timeline-tag">Next.js</span>
+            <span class="timeline-tag">GSAP</span>
+            <span class="timeline-tag">Team Lead</span>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ EDUCATION ══════════════════════════════════════════ -->
+  <section id="education">
+    <div class="section-inner">
+      <p class="section-label fade-up">05 — Education</p>
+      <h2 class="section-title fade-up">Academic<br><em>background</em></h2>
+
+      <div class="education-grid">
+
+        <div class="edu-card fade-up">
+          <h3 class="edu-degree">Bachelor of Science</h3>
+          <p class="edu-field">Computer Science and Engineering</p>
+          <p class="edu-school">Presidency University</p>
+          <p class="edu-year">2026 – 2029 (Expected)</p>
+          <p class="edu-detail">Currently Studying.</p>
+        </div>
+
+        <div class="edu-card fade-up">
+          <h3 class="edu-degree">Diploma</h3>
+          <p class="edu-field">Computer science and Technology</p>
+          <p class="edu-school">Sirajganj Polytechnic Institute</p>
+          <p class="edu-year">2022 – 2026</p>
+          <p class="edu-detail">CGPA (3.80/4.00)</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Rafi<span>.</span></div>
+          <p class="footer-tagline">Open to freelance &amp; full-time opportunities.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Rafi1624-web" class="footer-link">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-rafi-sheikh16 " class="footer-link">LinkedIn</a>
+          <a href="https://www.facebook.com/md.rafi.529257" class="footer-link">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Md Rafiul Ilam Sheikh. All rights reserved.</p>
+        <a href="https://mailto:mdrafiul162@gmail.com" class="footer-email">mdrafiul162@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══ JAVASCRIPT ════════════════════════════════════════ -->
+  <script>
+    /* ─────────────────────────────────────────────
+       CANVAS BACKGROUND ANIMATION
+    ───────────────────────────────────────────── */
+    (function () {
+      const canvas = document.getElementById('home-canvas');
+      const ctx = canvas.getContext('2d');
+      let W, H, orbs = [], lines = [];
+
+      const palette = [
+        'rgba(201,185,154,',
+        'rgba(143,168,155,',
+        'rgba(168,151,158,',
+        'rgba(208,206,200,',
+        'rgba(228,226,221,',
+        'rgba(240,238,234,',
+      ];
+
+      function init() {
+        orbs = []; lines = [];
+        for (let i = 0; i < 18; i++) {
+          const side = Math.random();
+          orbs.push({
+            x: side < 0.75 ? (W * 0.45 + Math.random() * W * 0.55) : Math.random() * W * 0.4,
+            y: Math.random() * H,
+            r: 60 + Math.random() * 200,
+            color: palette[Math.floor(Math.random() * palette.length)],
+            opacity: 0.04 + Math.random() * 0.1,
+            dx: (Math.random() - 0.5) * 0.18,
+            dy: (Math.random() - 0.5) * 0.18,
+            phase: Math.random() * Math.PI * 2,
+            speed: 0.003 + Math.random() * 0.006,
+          });
+        }
+        for (let i = 0; i < 8; i++) {
+          lines.push({
+            x1: W * 0.5 + Math.random() * W * 0.5,
+            y1: Math.random() * H,
+            x2: W * 0.4 + Math.random() * W * 0.6,
+            y2: Math.random() * H,
+            opacity: 0.03 + Math.random() * 0.05,
+            speed: 0.002 + Math.random() * 0.004,
+            phase: Math.random() * Math.PI * 2,
+          });
+        }
+      }
+
+      function resize() {
+        W = canvas.width = canvas.offsetWidth;
+        H = canvas.height = canvas.offsetHeight;
+        init();
+      }
+
+      let t = 0;
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+
+        const bg = ctx.createLinearGradient(0, 0, W, H);
+        bg.addColorStop(0, '#f7f6f4');
+        bg.addColorStop(0.6, '#f0eee9');
+        bg.addColorStop(1, '#ebe8e2');
+        ctx.fillStyle = bg;
+        ctx.fillRect(0, 0, W, H);
+
+        orbs.forEach(o => {
+          const pulse = Math.sin(t * o.speed + o.phase) * 0.3;
+          const r = o.r * (1 + pulse * 0.1);
+          const grd = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, r);
+          grd.addColorStop(0, o.color + (o.opacity + pulse * 0.02) + ')');
+          grd.addColorStop(1, o.color + '0)');
+          ctx.beginPath();
+          ctx.arc(o.x, o.y, r, 0, Math.PI * 2);
+          ctx.fillStyle = grd;
+          ctx.fill();
+          o.x += o.dx; o.y += o.dy;
+          if (o.x < -o.r) o.x = W + o.r;
+          if (o.x > W + o.r) o.x = -o.r;
+          if (o.y < -o.r) o.y = H + o.r;
+          if (o.y > H + o.r) o.y = -o.r;
+        });
+
+        lines.forEach(l => {
+          const op = l.opacity * (0.8 + Math.sin(t * l.speed + l.phase) * 0.2);
+          ctx.beginPath();
+          ctx.moveTo(l.x1, l.y1);
+          ctx.lineTo(l.x2, l.y2);
+          ctx.strokeStyle = `rgba(176,173,166,${op})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        });
+
+        ctx.save();
+        for (let i = 0; i < 60; i++) {
+          const gx = W * 0.45 + Math.random() * W * 0.55;
+          const gy = Math.random() * H;
+          ctx.beginPath();
+          ctx.arc(gx, gy, 0.6, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(140,135,128,${0.015 + Math.random() * 0.025})`;
+          ctx.fill();
+        }
+        ctx.restore();
+
+        t++;
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', resize);
+      resize();
+      draw();
+    })();
+
+    /* ─────────────────────────────────────────────
+       ACTIVE NAV ON SCROLL
+    ───────────────────────────────────────────── */
+    const sections = ['home', 'about', 'projects', 'skills', 'experience', 'education'];
+    const navLinks = document.querySelectorAll('.nav-capsule a');
+    const mobLinks = document.querySelectorAll('.mobile-menu a');
+
+    function getActive() {
+      let current = 'home';
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.getBoundingClientRect().top <= 90) current = id;
+      });
+      return current;
+    }
+
+    function updateNav() {
+      const active = getActive();
+      navLinks.forEach(a => a.classList.toggle('active', a.dataset.section === active));
+      mobLinks.forEach(a => a.classList.toggle('active', a.dataset.mob === active));
+    }
+
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    /* ─────────────────────────────────────────────
+       HAMBURGER MENU
+    ───────────────────────────────────────────── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    /* ─────────────────────────────────────────────
+       FADE-UP SCROLL ANIMATIONS
+    ───────────────────────────────────────────── */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+
+</html>
